@@ -1,0 +1,109 @@
+.section {
+   &__team {
+      padding: 0 0 304px;
+      @media (max-width: 768px){
+         padding: 0 0 204px;
+      }
+   }
+}
+.team {
+   &__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 3.475em;
+      line-height: 0.965;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      max-width: 663px;
+      width: 100%;
+      margin: 0 auto 79px;
+      span {
+         color: #fdcf09;
+      }
+      @media (max-width: 768px){
+         font-size: 3em;
+         margin: 0 auto 59px;
+      }
+      @media (max-width: 480px){
+         font-size: 2.5em;
+      }
+      @media (max-width: 400px){
+         font-size: 2em;
+      }
+   }
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 85px;
+      @media (max-width: 1007px){
+         column-gap: 20px !important;
+         row-gap: 79px !important;
+      }
+      @media (max-width: 768px){
+         grid-template-columns: repeat(2, 1fr);
+         row-gap: 59px !important;
+      }
+      @media (max-width: 400px){
+         grid-template-columns: repeat(1, 1fr);
+         align-items: center;
+      }
+   }
+   &__item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 400px){
+         max-width: 213px;
+         margin: 0 auto;
+      }
+      &:hover{
+         .team__item-img{
+            transform: scale(1.1);
+            transition: all .3s ease;
+         }
+      }
+   }
+   &__item-img {
+      width: 213px;
+      height: 247px;
+      margin-bottom: 18px;
+      transition: all .3s ease;
+      @media (max-width: 480px){
+         width: 100%;
+         height: auto;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &__item-title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4375em;
+      line-height: 0.965;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 14px;
+      @media (max-width: 480px){
+         font-size: 1.2em;
+         margin-bottom: 5px;
+      }
+   }
+   &__item-text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.1875em;
+      line-height: 0.965;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fec200;
+      font-size: 1em;
+   }
+}

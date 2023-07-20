@@ -1,0 +1,99 @@
+.section {
+   &__mission {
+      padding: 0 0 220px;
+      @media (max-width: 768px){
+         padding: 0 0 120px;
+      }
+   }
+}
+.mission {
+   max-width: 793px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   &__header {
+      margin-bottom: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:nth-child(3) {
+         .mission__title{
+            margin-left: -25px;
+            @media (max-width: 600px){
+               margin-left: -20px;
+            }
+            @media (max-width: 480px){
+               margin-left: -15px;
+            }
+         }
+         .mission__subtitle{
+            transform: rotate(-90deg);
+         }
+      }
+      @media (max-width: 600px){
+         margin-bottom: 10px;
+      }
+   }
+   &__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 7.4375em;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: #f9cc0d;
+      @media (max-width: 600px){
+         font-size: 6em;
+      }
+      @media (max-width: 480px){
+         font-size: 4.6em;
+      }
+      @media (max-width: 400px){
+         font-size: 4em;
+      }
+      @media (max-width: 350px){
+         font-size: 3.5em;
+      }
+   }
+   &__subtitle {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 2.7em;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: left;
+      max-width: fit-content;
+      max-height: fit-content;
+      @media (max-width: 600px){
+         font-size: 2em;
+      }
+      @media (max-width: 480px){
+         font-size: 1.7em;
+      }
+      @media (max-width: 400px){
+         font-size: 1.3em;
+      }
+   }
+   &__text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4375em;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 35px;
+      &:last-child{
+         margin-bottom: 0;
+      }
+      @media (max-width: 600px){
+         font-size: 1.2em;
+         margin-bottom: 100px;
+      }
+      @media (max-width: 400px){
+         font-size: 1em;
+      }
+   }
+}

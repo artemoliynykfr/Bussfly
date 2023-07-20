@@ -1,0 +1,103 @@
+.section {
+   &__missing {
+      padding: 0 0 229px;
+      @media (max-width: 768px){
+         padding: 0 0 129px;
+      }
+   }
+}
+.missing {
+   position: relative;
+   &__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 3.475em;
+      line-height: 0.94;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      max-width: 534px;
+      width: 100%;
+      margin: 0 auto 68px;
+      span {
+         color: #fdcf09;
+      }
+      @media (max-width: 480px) {
+         font-size: 2.8em;
+      }
+      @media (max-width: 400px) {
+         font-size: 2em;
+      }
+   }
+   &__chart {
+      &-mob{
+         display: none !important;
+      }
+      @media (max-width: 1110px) {
+         padding: 0 50px;
+      }
+      @media (max-width: 1007px) {
+         padding: 0 35px;
+      }
+      @media (max-width: 768px){
+         height: calc(220px + (450 - 220) * ((100vw - 300px) / (768 - 300))) !important;
+         display: none !important;
+         &-mob{
+            display: block !important;
+         }
+      }
+   }
+   &__text {
+      position: absolute;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.3875em;
+      line-height: 0.94;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      max-height: fit-content;
+      max-width: fit-content;
+      transform: rotate(-90deg);
+      &:nth-child(3) {
+         right: -200px;
+         bottom: 250px;
+      }
+      &:nth-child(4) {
+         left: -180px;
+         bottom: 220px;
+      }
+      @media (max-width: 1280px) {
+         &:nth-child(3) {
+            right: -140px;
+         }
+         &:nth-child(4) {
+            left: -100px;
+         }
+      }
+      @media (max-width: 1007px) {
+         font-size: 1em;
+         &:nth-child(3) {
+            right: -100px;
+            bottom: 170px;
+         }
+         &:nth-child(4) {
+            left: -70px;
+            bottom: 120px;
+         }
+      }
+      @media (max-width: 400px){
+         font-size: .7em;
+         &:nth-child(3) {
+            right: -55px;
+            bottom: 130px;
+         }
+         &:nth-child(4) {
+            left: -40px;
+            bottom: 120px;
+         }
+      }
+   }
+}

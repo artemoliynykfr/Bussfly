@@ -1,0 +1,169 @@
+footer {
+   background: #000000;
+   margin-top: -1px;
+}
+.footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 0 0 93px;
+   @media (max-width: 1007px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   @media (max-width: 768px){
+      padding: 0 0 40px;
+   }
+   @media (max-width: 480px) {
+      justify-content: center;
+      text-align: center;
+   }
+   &__logo {
+      transition: all .3s ease;
+      &:hover{
+         transform: scale(1.05);
+         transition: all .3s ease;
+      }
+      img {
+         width: 108px;
+         height: 54px;
+      }
+      @media (max-width: 1007px) {
+         width: 100%;
+         flex: 0 1 108px;
+         order: 1;
+         margin: 0 0 40px 20px;
+      }
+      @media (max-width: 480px) {
+         margin: 0 0 40px;
+      }
+   }
+   &__menu {
+      display: flex;
+      align-items: flex-start;
+      @media (max-width: 1007px) {
+         order: 3;
+         justify-content: space-between;
+         width: 100%;
+      }
+      @media (max-width: 480px) {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+   &__menu-item {
+      margin-right: 68px;
+      &:last-child {
+         margin-right: 0;
+      }
+      @media (max-width: 480px) {
+         margin-right: 0;
+         margin-bottom: 30px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+   &__title {
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1em;
+      line-height: 1.25;
+      text-transform: capitalize;
+      color: #fdcf09;
+      margin-bottom: 19px;
+      @media (max-width: 480px) {
+         margin-bottom: 10px;
+      }
+   }
+   &__list {
+      list-style: none;
+   }
+   &__list-item {
+      a {
+         font-family: "Roboto";
+         font-style: normal;
+         font-weight: 400;
+         font-size: 1em;
+         line-height: 1.94;
+         color: #ffffff;
+         transition: all 0.3s ease;
+         &:hover {
+            transition: all 0.3s ease;
+            color: #c6c6c6;
+         }
+      }
+   }
+   &__contact {
+      @media (max-width: 1007px) {
+         order: 2;
+         width: 100%;
+         flex: 0 1 343px;
+         margin: 0 0 60px;
+      }
+   }
+   &__contact-title {
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.375em;
+      line-height: 1.272727272727273;
+      text-transform: capitalize;
+      color: #ffffff;
+      margin-bottom: 34px;
+   }
+   &__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fdcf09;
+      border-radius: 70px;
+      padding: 0 13px 0 0;
+      transition: all 0.3s ease;
+      &:focus-within {
+         box-shadow: 0 0 2px 2px #fdcf09;
+         transition: all 0.3s ease;
+      }
+   }
+   &__form-input {
+      border: none;
+      background: none;
+      padding: 14px 10px 11px 27px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1em;
+      line-height: 1.94;
+      width: 100%;
+      color: rgba($color: #000000, $alpha: 1);
+      &::placeholder {
+         color: rgba($color: #000000, $alpha: 0.52);
+         opacity: 1;
+      }
+      &::-moz-placeholder {
+         color: rgba($color: #000000, $alpha: 0.52);
+         opacity: 1;
+      }
+   }
+   &__form-btn {
+      background: #000000;
+      border-radius: 70px;
+      border: none;
+      padding: 12px 33px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.142857142857143em;
+      line-height: 1.142857142857143;
+      text-transform: uppercase;
+      color: #ffffff;
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover{
+         transition: all .3s ease;
+         box-shadow: 0 0 8px #000000;
+      }
+   }
+}
